@@ -8,3 +8,4 @@ class Bookmark(models.Model):
         return "이름 : "+self.site_name+", 주소 : "+self.url
     def get_absolute_url(self):
         return reverse('detail', args=[self.id])
+ 
